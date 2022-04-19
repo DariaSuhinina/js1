@@ -1,13 +1,37 @@
 // 1 задача
 
-function getName(a,b) {
-    if(a>b) return 1
-    else if(a<b) return -1
-    else if(a==b) return 0
+// function getName(a,b) {
+//     if(a>b) return 1
+//     else if(a<b) return -1
+//     else if(a==b) return 0
+// }
+
+// console.log(getName(2,3));
+
+//не работает
+// function getName(a,b) {
+//     (a>b) ? 1 :
+//     (a<b) ? -1 :
+//     (a==b) ? 0;
+// }
+
+// console.log(getName(2,3));
+
+let getName = (a,b) => {
+   return(a>b)? 1 : -1;
 }
 
 console.log(getName(2,3));
 
+// работает
+
+// let getName = (a,b) => {
+//     if(a>b) return 1
+//     else if(a<b) return -1
+//     else if(a==b) return 0
+// }
+
+// console.log(getName(2,3));
 
 // 2 задача
 
@@ -34,6 +58,8 @@ console.log(getName(2,3));
 
 // console.log (getName(3,5));
 
+// 4 задача
+
 // function seguence(start, step) {
 //     while(true){
 //         start = start || 0;
@@ -44,7 +70,7 @@ console.log(getName(2,3));
 // }
 
 // function sequence(start = 0, step = 1) {
-//     let callNum = start; 
+//    let callNum = start; 
 //    return function() { 
 //    let retVal = callNum; 
 //    callNum += step; 
@@ -56,3 +82,27 @@ console.log(getName(2,3));
 // alert (generator());
 // alert (generator ());
 // alert (generator());
+
+//worked!!!
+
+// let a = 0;
+// let b = 1;
+// function count() {
+//     a += +b;
+//     return a;
+// };
+
+// alert (count());
+// alert (count());
+// alert (count());
+
+// let a = 0;
+// let b = 1;
+// function count(a, b) {
+//     a += +b;
+//     return a;
+// };
+
+// alert (count());
+// alert (count());
+// alert (count());
