@@ -9,19 +9,22 @@
 // console.log(getName(2,3));
 
 //не работает
-// function getName(a,b) {
-//     (a>b) ? 1 :
-//     (a<b) ? -1 :
-//     (a==b) ? 0;
+function getName(a,b) {
+    (a>b) ? 1 :
+    (a<b) ? -1 :
+    (a==b) ? 0;
+}
+
+
+console.log(getName(2,3));
+
+//РАБОТАЕТ
+
+// let getName = (a,b) => {
+//    return(a>b)? 1 : -1;
 // }
 
 // console.log(getName(2,3));
-
-let getName = (a,b) => {
-   return(a>b)? 1 : -1;
-}
-
-console.log(getName(2,3));
 
 // работает
 
