@@ -82,13 +82,15 @@
 
 // task 6
 
-// const obj = {
-//     id: 5,
-//     token: 123123,
-// }
+const obj = {
+    id: 5,
+    token: 123123,
+}
 
 // const id = "id";
 // alert ( obj[id] );
+
+console.log (id);
 
 
 // task 7
