@@ -1,11 +1,17 @@
 // task 1
 
-// let user = {}
+// const user = {}
+
 // user.name= "John";
+
 // user.surname= "Smith";
+
 // user.name = "Peter";
+
 // console.log(user.name);
+
 // delete user.name;
+
 // console.log(user.name);
 
 
@@ -18,19 +24,21 @@
 //     return true;
 // }
 
-// let shedule = {};
+// const shedule = {};
+
 // console.log (isEmpty(shedule));
 
 
 // task 3
 
-// let salaries = {
+// const salaries = {
 //     John: 100,
 //     Ann: 160,
 //     Pete: 130
 // }
 
-// sum = 0;
+// let sum = 0;
+
 // for( let key in salaries) {
 //     sum += salaries[key];
 // }
@@ -40,7 +48,7 @@
 
 // task 4
 
-// let menu = {
+// const menu = {
 //   width: 200,
 //   height: 300,
 //   title: "My menu"
@@ -54,12 +62,13 @@
 //     console.log(obj[key]);
 //     }
 // }
+
 // multiplyNumeric(menu);
 
 
 //task 5
 
-// let user = {
+// const user = {
 //     name: "John",
 //     age: 30,
 // }
@@ -84,10 +93,82 @@
 
 // task 7
 
-const obj = {
-    id: 5,
-    token: 123123,
-}
+// const obj = {
+//     id: 5,
+//     token: 123123,
+// }
 
-const userId = obj.id;
-console.log(userId);
+// const userId = obj.id;
+// console.log(userId);
+
+
+//task 8
+
+//Создайте объект city1 (var city1 = {}), укажите у него свойства name (название города, строка) 
+//со значением «ГородN» и population (населенность города, число) со значением 10 млн.
+
+// const city1 = {
+//     name: 'ГородN',
+//     population: 1000000,
+// }
+
+// const city2 = {
+//     name: 'ГородM',
+//     population: 1e6,
+// }
+
+//Создайте у объектов city1 и city2 методы getName(), которые вернут соответствующие названия городов
+
+// city1.getName = function() {
+//     return this.name;
+// }
+
+// city2.getName = function() {
+//     return this.name;
+// }
+
+// console.log(city1.getName());
+
+//Создайте методы exportStr() у каждого из объектов. Этот метод должен возвращать
+//  информацию о городе в формате «name=ГородN\npopulation=10000000\n». Для второго города 
+//  будет строка со своими значениями. Примечание: можно 
+// обращаться к каждому свойству через цикл for/in, но методы объекта возвращать не нужно
+
+// function exportStr() {
+//     return `name=${this.name}/n population=${this.population}/n`;
+// }
+
+// city1.exportStr = exportStr;
+
+// city2.exportStr = exportStr;
+
+// console.log (city1.exportStr());
+
+///Создайте глобальную функцию getObj(), которая возвращает this. А у каждого из 
+// объектов city1 или city2 метод getCity, который ссылается на getObj. 
+// Проверьте работу метода. Примечание: к объекту вызова можно обратиться через this.
+
+// function getObj() {
+//     return this.name;
+// }
+
+// city1.getObj = getObj;
+// city2.getObj = getObj;
+
+// console.log (city1.getObj());
+
+//task 9
+
+// let obj = {
+//     method1() {
+//         return;
+//     },
+//     method2() {
+//         return;
+//     },
+//     method3() {
+//        document.write('метод3');
+//     }
+// }
+
+// console.log (obj.method1().method2().method3());
